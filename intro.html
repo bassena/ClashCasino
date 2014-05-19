@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Welcome -- Clash Casino</title>
+<link href="styles/introStyle.css" rel="stylesheet" type="text/css">
+
+<link href="styles/introMobileStyle.css" rel="stylesheet" type="text/css" media="handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)">
+
+<link href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">
+</script>
+
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js">
+</script>
+
+<script type="text/javascript" src="scripts/functions.js">
+</script>
+
+<script type="text/javascript" src="scripts/validation.js">
+</script>
+
+
+</head>
+
+<body onLoad="imageInit(); checkCookie();">
+
+
+	<img src="images/logo_blink0.png" width="460" height="250" alt="Clash Casino Logo" id="logo"/>
+
+    
+	<div id="info">
+  		<form action="game.html" method="get" name="signup" id="signupForm" onSubmit="return validateFields();">
+        	
+
+			<label class="labelAlign" for="firstName">First Name:</label>
+          	<input type="text" name="firstName" id="firstName" title="Enter your first name"/><br/>
+            
+            <!-- First Name Error Messages -->
+            <label id="firstNameErrorMsg">Your first name must be less than or equal to 20 characters.</label>
+            <label id="firstNameLetterErrorMsg">The first letter must be a capital letter.</label>
+            <label id="fNameEmptyFieldErrorMsg">This field cannot be emply.</label>
+			<label id="fNameNumFieldErrMsg">This field can only contain letters.</label>
+            
+
+            <label class="labelAlign" for="lastName">Last Name:</label>
+        	<input type="text" name="lastName" id="lastName" title="Enter your last name"/><br/>
+            
+            <!-- Last Name Error Messages -->
+            <label id="lastNameErrorMsg">Your last name must be less than or equal to 30 characters.</label>
+            <label id="lastNameLetterErrorMsg">The first letter must be a capital letter.</label>
+            <label id="lNameEmptyFieldErrorMsg">This field cannot be emply.</label>
+            <label id="lNameNumFieldErrMsg">This field can only contain letters.</label>
+
+            
+
+        	<label class="labelAlign" for="phoneNum">Phone Number:</label>
+            <input type="text" name="phoneNum" id="phoneNum" title="(###) ###-####"/><br/>
+			
+            <!-- Phone Number Error Messages -->
+            <label id="phoneWrongFormatErrMsg">The entered phone number is in a wrong format.</label>
+            <label id="phoneWrongContentErrMsg">This field can only contain numbers, dashes (-), periods (.), or parentheses [()].</label>
+            <label id="phoneNumEmptyFieldErrorMsg">This field cannot be emply.</label>
+
+            
+
+            <label class="labelAlign" for="email">E-mail:</label>
+            <input type="text" name="email" id="email" maxlength="254"/> 
+            <!-- Max length set to 254 due to the actual maximum length of a valid email address according to the RFC (http://www.rfc-editor.org/errata_search.php?rfc=3696&eid=1690)-->
+
+            
+
+            <label class="labelAlign" for="postalCode">Postal Code:</label>
+            <input type="text" name="postalCode" id="postalCode" title="Ex.: A1A 1A1" onKeyUp="convertPostalCodeFormat();"/><br/>
+            
+            <!-- Postal Code Error Messages -->
+            <label id="postCodeWrongFormatErrMsg">The entered postal code is in a wrong format.</label>
+            <label id="emptyPostCodeErrMsg">This field cannot be emply.</label>
+            
+            <label class="labelAlign" for="startingCash">Starting Amount:</label>
+            <input type="text" name="startingCash" id="startingCash" title="In dollars ($)"/><br/>
+            
+            <!-- Starting Amount Error Messages -->
+            <label id="cashAmtErrorMsg">You must only enter an amount between 5 and 5000.</label>
+            <label id="cashDecimalErrorMsg">Your amount must not contain any decimals.</label>
+            <label id="onlyNumbersAllowedErrorMsg">Only numbers are allowed in this field.</label>
+            <label id="cashEmptyFieldErrorMsg">This field cannot be emply.</label>
+        </form>
+    </div>
+</body>
+</html>

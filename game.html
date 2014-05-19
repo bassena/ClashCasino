@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Roulette -- Clash Casino</title>
+<link href="styles/gameStyles.css" rel="stylesheet" type="text/css">
+
+<link id="mobile" href="styles/gameStylesToTablet.css" rel="stylesheet" type="text/css" media="handheld, only screen and (max-width: 800px), only screen and (max-device-width: 800px)">
+
+<link id="mobile" href="styles/gameMobileStyles.css" rel="stylesheet" type="text/css" media="handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
+</script>
+<script type="text/javascript" src="scripts/jQueryRotate.js">
+</script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js">
+</script>
+<script type="text/javascript" src="scripts/functions.js">
+</script>
+<script type="text/javascript" src="scripts/gameFunctions.js">
+</script>
+
+</head>
+
+<body onLoad="footerPlacement(); headerSize(); imageInit(); initCookieValues();">
+	
+    <div id="header">
+    	<span id="headSpan">Roulette</span>
+    </div>
+    <div id="casinoLogoDiv">
+    		<img id="logo" src="images/logo_blink0.png" alt="Clash Casino Logo" width="230" height="125"/>
+    </div>
+    <div id="container">
+    	<div id="gameArea">
+        	
+            <div id="lightBox1">
+    			<img class="light" src="images/light.png" width="86" height="86"/>
+			</div>
+            <div id="lightBox2">
+    			<img class="light" src="images/light.png" width="86" height="86"/>
+			</div>
+          
+            <div id="rouletteTable">
+            	<img src="images/table.png" alt="roulette table" width="739" height="363"/>
+                
+                <div id="tableTiles">
+                
+                	<div id="topNumbers">
+                    	<div class="stubDiv">
+                        &nbsp;
+                        </div>
+                        
+                        <div class="topNumbers" onClick="numberBetPlacement(3);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="3"/>
+                        </div>
+                        <div class="topNumbers" onClick="numberBetPlacement(6);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="6"/>
+                        </div>
+                        <div class="topNumbers" onClick="numberBetPlacement(9);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="9"/>
+                        </div>
+                        <div class="topNumbers" onClick="numberBetPlacement(12);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="12"/>
+                        </div>
+                        <div class="topNumbers" onClick="numberBetPlacement(15);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="15"/>
+                        </div>
+                        <div class="topNumbers" onClick="numberBetPlacement(18);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="18"/>
+                        </div>
+                        <div class="topNumbers" onClick="numberBetPlacement(21);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="21"/>
+                        </div>
+                        <div class="topNumbers" onClick="numberBetPlacement(24);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="24"/>
+                        </div>
+                        <div class="topNumbers" onClick="numberBetPlacement(27);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="27"/>
+                        </div>
+                        <div class="topNumbers" onClick="numberBetPlacement(30);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="30"/>
+                        </div>
+                        <div class="topNumbers" onClick="numberBetPlacement(33);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="33"/>
+                        </div>
+                        <div class="topNumbers" onClick="numberBetPlacement(36);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="36"/>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <div id="topAvenueAndCorners">
+                    	<div class="streetStubDiv">
+                        &nbsp;
+                        </div>
+                        
+                    	<div id="topAvenueBet" onClick="avenueBetPlacement(3,6,9,12,15,18,21,24,27,30,33,36);">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="avenueChip" id="av3"/>
+                        </div>
+                        
+                        <div class="corners" onClick="cornerBetPlacement(3,6,2,5)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="3625"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(6,9,5,8)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="6958"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(9,12,8,11)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="912811"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(12,15,11,14)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="12151114"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(15,18,14,17)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="15181417"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(18,21,17,20)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="18211720"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(21,24,20,23)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="21242023"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(24,27,23,26)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="24272326"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(27,30,26,29)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="27302629"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(30,33,29,32)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="30332932"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(33,36,32,35)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="33363235"/>
+                        </div>
+                    </div>
+                    
+                    <div id="midNumbers">
+                    	<div id="zeroBet" onClick="numberBetPlacement(0);">
+                        	&nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="0"/>
+                        </div>
+                    
+                    	<div class="midBotNumbers" onClick="numberBetPlacement(2);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="2"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(5);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="5"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(8);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="8"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(11);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="11"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(14);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="14"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(17);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="17"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(20);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="20"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(23);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="23"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(26);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="26"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(29);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="29"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(32);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="32"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(35);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="35"/>
+                        </div>
+                    </div>
+                    
+                    <div id="midStreetAndCorners">
+                    	<div class="streetStubDiv">
+                        &nbsp;
+                        </div>
+                        
+                    	<div id="midAvenueBet" onClick="avenueBetPlacement(2,5,8,11,14,17,20,23,26,29,32,35);">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="avenueChip" id="av2"/>
+                        </div>
+                        
+                        <div class="corners" onClick="cornerBetPlacement(2,5,1,4)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="2514"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(5,8,4,7)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="5847"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(8,11,7,10)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="811710"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(11,14,10,13)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="11141013"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(14,17,13,16)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="14171316"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(17,20,16,19)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="17201619"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(20,23,19,22)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="20231922"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(23,26,22,25)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="23262225"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(26,29,25,28)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="26292528"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(29,32,28,31)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="29322831"/>
+                        </div>
+                        <div class="corners" onClick="cornerBetPlacement(32,35,31,34)">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="cornerChip" id="32353134"/>
+                        </div>
+                    </div>
+                    
+                    <div id="botNumbers">
+                    
+                   		<div class="stubDiv">
+                        &nbsp;
+                        </div>
+                    	<div class="midBotNumbers" onClick="numberBetPlacement(1);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="1"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(4);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="4"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(7);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="7"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(10);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="10"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(13);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="13"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(16);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="16"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(19);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="19"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(22);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="22"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(25);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="25"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(28);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="28"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(31);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="31"/>
+                        </div>
+                        <div class="midBotNumbers" onClick="numberBetPlacement(34);">
+                        	<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="numChip" id="34"/>
+                        </div>
+                    </div>
+                    
+                    <div id="botStreetAndCorners">
+                    	<div class="streetStubDiv">
+                        &nbsp;
+                        </div>
+                        
+                    	<div id="botAvenueBet" onClick="avenueBetPlacement(1,4,7,10,13,16,19,22,25,28,31,34);">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="avenueChip" id="av1"/>
+                        </div>
+                        
+                        <div class="corners" onClick="streetBetPlacement(1,2,3);">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="streetChip" id="123"/>
+                        </div>
+                        <div class="corners" onClick="streetBetPlacement(4,5,6);">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="streetChip" id="456"/>
+                        </div>
+                        <div class="corners" onClick="streetBetPlacement(7,8,9);">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="streetChip" id="789"/>
+                        </div>
+                        <div class="corners" onClick="streetBetPlacement(10,11,12);">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="streetChip" id="101112"/>
+                        </div>
+                        <div class="corners" onClick="streetBetPlacement(13,14,15);">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="streetChip" id="131415"/>
+                        </div>
+                        <div class="corners" onClick="streetBetPlacement(16,17,18);">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="streetChip" id="161718"/>
+                        </div>
+                        <div class="corners" onClick="streetBetPlacement(19,20,21);">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="streetChip" id="192021"/>
+                        </div>
+                        <div class="corners" onClick="streetBetPlacement(22,23,24);">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="streetChip" id="222324"/>
+                        </div>
+                        <div class="corners" onClick="streetBetPlacement(25,26,27);">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="streetChip" id="252627"/>
+                        </div>
+                        <div class="corners" onClick="streetBetPlacement(28,29,30);">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="streetChip" id="282930"/>
+                        </div>
+                        <div class="corners" onClick="streetBetPlacement(31,32,33);">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="streetChip" id="313233"/>
+                        </div>
+                        <div class="corners" onClick="streetBetPlacement(34,35,36);">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="streetChip" id="343536"/>
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="oneThirds">
+                    	<div class="stubDiv">
+                        &nbsp;
+                        </div>
+                        
+                        <div class="thirdDivs" id="firstThird" onClick="oneThirdBetPlacement('firstThirdBet');">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="thirdChip" id="firstThirdBet"/>
+                        </div>
+                        <div class="thirdDivs" id="secondThird" onClick="oneThirdBetPlacement('secondThirdBet');">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="thirdChip" id="secondThirdBet"/>
+                        </div>
+                        <div class="thirdDivs" id="lastThird" onClick="oneThirdBetPlacement('lastThirdBet');">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="thirdChip" id="lastThirdBet"/>
+                        </div>
+                    </div>
+                    
+                    <div id="bottomBets">
+                    	<div class="stubDiv">
+                        &nbsp;
+                        </div>
+                        
+                        <div class="botBetAreas" onClick="highLowBetPlacement('low');">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="botChip" id="low"/>
+                        </div>
+                        <div class="botBetAreas" onClick="oddEvenBetPlacement('even');">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="botChip" id="even"/>
+                        </div>
+                        <div class="botBetAreas" onClick="colourBetPlacement('red');">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="botChip" id="red"/>
+                        </div>
+                        <div class="botBetAreas" onClick="colourBetPlacement('black');">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="botChip" id="black"/>
+                        </div>
+                        <div class="botBetAreas" onClick="oddEvenBetPlacement('odd');">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="botChip" id="odd"/>
+                        </div>
+                        <div class="botBetAreas" onClick="highLowBetPlacement('high');">
+                        &nbsp;<img src="images/chip_grey.gif" alt="chip" width="30" height="30" class="botChip" id="high"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="wheelDiv">
+                <img src="images/wheel.png" alt="Roulette Wheel image" width="328" height="328" id="wheel" onClick="animateWheel();"/><br/>
+                <span id="wheelInfo">Click to spin the wheel!</span>
+        </div>
+        	<div id="spinBtn">
+                	<input type="button" onClick="buttonSpin();" value="Spin!"/>
+			</div>
+     	</div>
+        
+        
+        <footer>
+                <div id="personalInfo">
+                </div>
+                
+                <div id="cashAmount">
+                </div>
+        </footer>
+    </div>
+</body>
+</html>

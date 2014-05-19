@@ -1,0 +1,224 @@
+#casinoLogoDiv{
+	background-color: rgba(0,0,0,0.5);
+	height:3em !important;
+	width:250px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 0px !important;
+}
+
+#logo{
+	display:none !important;
+	float:left;
+	padding-top:0.5em;
+	padding-left:0.6em;
+	display:inline;
+}
+
+#header span{
+	margin-left:-12em !important;
+	font-size:1em !important;
+	width:500px !important;
+}
+
+#container{
+	height:50%;
+}
+
+#wheel{
+	display:none;
+}
+
+#wheelInfo{
+	display:none;
+}
+
+#rouletteTable{
+	padding-top:5em;
+	width:470px;
+	height:auto;
+}
+
+#rouletteTable img{
+	width:470px;
+	height: auto;
+}
+
+.numChip{
+	width:20px !important;
+	height:20px !important;
+	margin-left:0.5em;
+	margin-top: 0.5em;
+	display:none;
+}
+
+.cornerChip{
+	width:20px !important;
+	height:20px !important;
+	margin-top: -0.3em;
+	margin-left: -0.5em;
+	display:none;
+}
+
+.avenueChip{
+	width:20px !important;
+	height:20px !important;
+	margin-left:-0.5em;
+	margin-top:-0.3em;
+	display:none;
+}
+
+.streetChip{
+	width:20px !important;
+	height:20px !important;
+	margin-left:-0.5em;
+	margin-top:-0.3em;
+	display:none;
+}
+
+.thirdChip{
+	width:20px !important;
+	height:20px !important;
+	margin-top:-0.3em;
+	margin-left:4em;
+	display:none;
+}
+
+.botChip{
+	width:20px !important;
+	height:20px !important;
+	margin-top:-0.3em;
+	margin-left:1.3em;
+	display:none;
+}
+
+#topNumbers{
+	padding-top:0.3187em;
+	height:3.187em;
+}
+
+.stubDiv{
+	width:3.825em;
+	height:0.85em;
+	float:left;
+}
+
+.topNumbers{
+	width:1.77em;
+	height:2.89em;
+	margin-right:0.195em;
+	float:left;
+}
+
+#topAvenueAndCorners{
+	height:0.828em;
+}
+
+#topAvenueBet{
+	width:0.833em;
+	margin-right:1.045em;
+	float:left;
+}
+
+.streetStubDiv{
+	width:3.2em;
+	float:left;
+}
+
+.corners{
+	width:0.828em;
+	margin-right:1.147em;
+	float:left;
+}
+
+#zeroBet{
+	margin-left:0.573em;
+	margin-right:0.382em;
+	width:2.868em;
+	height:2.4em;
+	float:left;
+}
+
+.midBotNumbers{
+	width:1.785em;
+	height:2.4em;
+	margin-right:0.184em;
+	float:left;
+}
+
+#midAvenueBet{
+	width:0.828em;
+	margin-right:1.083em;
+	float:left;
+}
+
+#botAvenueBet{
+	width:0.828em;
+	height:0.9em;
+	margin-right:1.083em;
+	float:left;
+}
+
+.thirdDivs{
+	width:7.6em;
+	height:0.85em;
+	margin-right:0.274em;
+	float:left;
+}
+
+.botBetAreas{
+	margin-top:-0.005em;
+	margin-right:0.255em;
+	width:3.697em;
+	float:left;
+}
+
+
+footer{
+	bottom:-5em;
+}
+
+#personalInfo{
+	font-size: 14px;
+}
+
+#cashAmount{
+	font-size:14px;	
+}
+
+footer{
+	margin-bottom:0.2em;
+	height:5em;
+}
+
+#personalInfo{
+	border-right:none;
+	width:100%;
+	margin-left: 0;
+	text-align:center;
+}
+
+#spinBtn{
+	position: absolute;
+	display:block;
+	top:24em;
+	left:40%;
+}
+
+#lightBox1{
+	position:absolute;
+	top:0%;
+	left:20%;
+	width:300px;
+    height:500px;
+	
+}
+
+#lightBox2{
+	display:none;
+}
+
+.light{
+	opacity:0.7;
+	width:64.5px;
+	height:64.5px;
+}

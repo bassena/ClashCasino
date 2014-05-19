@@ -1,0 +1,83 @@
+<html>
+<!DOCTYPE html>
+<head>
+	<title>Clash Casino</title>
+<script type="text/javascript" src="scripts/indexFunctions.js">
+</script>
+<link href="styles/indexStyles.css" rel="stylesheet" type="text/css">
+<link href="styles/indexMobileStyles.css" rel="stylesheet" type="text/css" media="handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)">
+</head>
+
+<body onLoad="initChipMovement();">
+<div class="nonmobile">
+	<div id="cardRow">
+        <img src="images/cards/6.png" alt="card face down" width="88.75" height="120" id="card1"/>
+        
+        <img src="images/cards/45.png" alt="card face down" width="88.75" height="120" id="card2"/>
+        
+        <img src="images/cards/35.png" alt="card face down" width="88.75" height="120" id="card3"/>
+        
+        <img src="images/cards/4.png" alt="card face down" width="88.75" height="120" id="card4"/>
+        
+        <img src="images/cards/b2fv.png" alt="card face down" width="88.75" height="120" id="card5"/>
+    </div>
+
+
+<!--Javascript Left Moving Chip-->
+<img src="images/chip_red.gif" alt="red poker chip" height="88" width="88" id="leftMovingChip"/>
+
+
+	<div id="leftPlayerChips">
+    		<img src="images/chip_black.gif" alt="black poker chip" height="88" width="88" id="leftBlackChip"/>
+            
+    </div>
+
+	<div id="leftPlayer">
+        <img src="images/cards/b2fv.png" alt="card face down" width="88.75" height="120" id="leftCard1"/>
+        <img src="images/cards/b2fv.png" alt="card face down" width="88.75" height="120" id="leftCard2"/>
+    </div>
+
+
+<!--Javascript Centre Moving Chip-->
+<img src="images/chip_red.gif" alt="red poker chip" height="88" width="88" id="centreMovingChip"/>
+
+
+	<div id="centrePlayerChips">
+    		<img src="images/chip_black.gif" alt="black poker chip" height="88" width="88" id="centreBlackChip"/>
+    </div>
+    
+    
+    <div id="centrePlayer">
+        <img src="images/cards/b2fv.png" alt="card face down" width="88.75" height="120" id="centreCard1"/>
+        <img src="images/cards/b2fv.png" alt="card face down" width="88.75" height="120" id="centreCard2"/>
+    </div>
+
+
+<!--Javascript Right Moving Chip-->
+<img src="images/chip_red.gif" alt="red poker chip" height="88" width="88" id="rightMovingChip"/>
+    
+    
+    <div id="rightPlayerChips">
+    		<img src="images/chip_black.gif" alt="black poker chip" height="88" width="88" id="rightBlackChip"/>
+    </div>
+    
+    
+    <div id="rightPlayer">
+        <img src="images/cards/b2fv.png" alt="card face down" width="88.75" height="120" id="rightCard1"/>
+        <img src="images/cards/b2fv.png" alt="card face down" width="88.75" height="120" id="rightCard2"/>
+    </div>
+    
+    <div id="winDiv">
+		<img src="images/winner0.png" alt="image of winner" height="250" width="460" id="winnerImg"/>
+    </div>
+        
+    <a href="intro.html" id="skip">Skip</a>
+</div>
+<div class="mobile">
+	<img id="mobileImg" class="mobileLogo" src="images/logo_blink1.png" alt="static logo image" width="345" height="187.5"/>
+    <a href="intro.html" class="enter">Enter</a>
+</div>
+</body>
+
+
+</html>

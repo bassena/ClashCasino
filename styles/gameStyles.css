@@ -1,0 +1,327 @@
+body{
+	background-image: url(../images/bg.png);
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#FFF;
+}
+
+a{
+	color: #09F;
+}
+
+#header{
+	height: 3em;
+	background-color:rgba(0,0,0,0.5);
+	float:right;
+	border-bottom-right-radius: 15px;
+	line-height:3em;
+}
+
+#header span{
+	display:block;
+	font-size: 19px;
+	margin-left:auto;
+	margin-right:auto;
+	width:61%;
+}
+
+#container{
+	position:relative;
+}
+
+footer{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:3em;
+	background-color:rgba(0,0,0,0.5);
+	
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+#personalInfo{
+	width:auto;
+	height:2em;
+	overflow:hidden;
+	margin-left:1em;
+	margin-top:0.5em;
+	line-height:2em;
+	border-right:thin solid #666;
+	padding-right:0.5em;
+	display:inline-block;
+}
+
+#cashAmount{
+	display:inline-block;
+	margin-left:0.5em;
+	margin-top:0.8em;
+	vertical-align:top;
+}
+
+#casinoLogoDiv{
+	background-color: rgba(0,0,0,0.5);
+	height:140px;
+	width:250px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+#logo{
+	position:absolute;
+	float:left;
+	padding-top:0.5em;
+	padding-left:0.6em;
+	display:inline;
+}
+
+.numChip{
+	width:30px !important;
+	height:30px !important;
+	margin-left:0.5em;
+	margin-top: 0.5em;
+	display:none;
+}
+
+.cornerChip{
+	width:30px !important;
+	height:30px !important;
+	margin-top: -0.3em;
+	margin-left: -0.5em;
+	display:none;
+}
+
+.avenueChip{
+	width:30px !important;
+	height:30px !important;
+	margin-left:-0.5em;
+	margin-top:-0.3em;
+	display:none;
+}
+
+.streetChip{
+	width:30px !important;
+	height:30px !important;
+	margin-left:-0.5em;
+	margin-top:-0.3em;
+	display:none;
+}
+
+.thirdChip{
+	width:30px !important;
+	height:30px !important;
+	margin-top:-0.3em;
+	margin-left:4em;
+	display:none;
+}
+
+.botChip{
+	width:30px !important;
+	height:30px !important;
+	margin-top:-0.3em;
+	margin-left:1.3em;
+	display:none;
+}
+
+#betInfoDiv{
+	margin-top: 1em;
+	margin-left:auto;
+	margin-right:auto;
+	width:10ex;
+}
+
+#wheelDiv{
+	float:left;
+	margin-top:1em;
+}
+
+#wheelInfo{
+	font-size: 1.2em;
+	margin-left:2.5em;
+}
+
+#gameArea{
+	width:1100px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#wheel{
+	width: 300px;
+	height:300px;
+	margin-bottom:0.5em;
+}
+
+.betFields{
+	width:10.3ex;
+	margin-bottom:0.5em;
+}
+#spinBtn{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#spinBtn input{
+	font-size:1.4em;
+}
+
+#rouletteTable{
+	width:739px;
+	height:363px;
+	float:right;
+	margin-top: 1em;
+}
+
+#rouletteTable img{
+	position: absolute;
+	z-index: -1;
+}
+
+#topNumbers{
+	padding-top:0.5em;
+	height:5em;
+}
+
+.stubDiv{
+	width:6em;
+	float:left;
+}
+
+.topNumbers{
+	width:2.8em;
+	height:5em;
+	margin-right:0.29em;
+	float:left;
+}
+
+.topNumbers:hover{
+	background-color:#FF0;
+	opacity:0.7;
+}
+
+#topAvenueAndCorners{
+	height:1.3em;
+}
+
+#topAvenueBet{
+	width:1.3em;
+	margin-right:1.7em;
+	float:left;
+}
+
+#topAvenueBet:hover{
+	background-color:#FF0;
+	opacity:0.7;
+}
+
+.streetStubDiv{
+	width:5.25em;
+	float:left;
+}
+
+.corners{
+	width:1.3em;
+	margin-right:1.8em;
+	float:left;
+}
+
+.corners:hover{
+	background-color:#FF0;
+	opacity:0.7;
+}
+
+#zeroBet{
+	margin-left:0.9em;
+	margin-right:0.6em;
+	width:4.5em;
+	height:4.6em;
+	float:left;
+}
+
+#zeroBet:hover{
+	background-color:#FF0;
+	opacity:0.7;
+}
+
+.midBotNumbers{
+	width:2.8em;
+	height:4.6em;
+	margin-right:0.29em;
+	float:left;
+}
+
+.midBotNumbers:hover{
+	background-color:#FF0;
+	opacity:0.7;
+}
+
+#midAvenueBet{
+	width:1.3em;
+	margin-right:1.7em;
+	float:left;
+}
+
+#midAvenueBet:hover{
+	background-color:#FF0;
+	opacity:0.7;
+}
+
+#botAvenueBet{
+	width:1.3em;
+	margin-right:1.7em;
+	float:left;
+}
+
+#botAvenueBet:hover{
+	background-color:#FF0;
+	opacity:0.7;
+}
+
+.thirdDivs{
+	width:12em;
+	margin-right:0.43em;
+	float:left;
+}
+
+.thirdDivs:hover{
+	background-color:#FF0;
+	opacity:0.7;
+}
+
+.botBetAreas{
+	margin-top:1em;
+	margin-right:0.4em;
+	width:5.8em;
+	float:left;
+}
+
+.botBetAreas:hover{
+	background-color:#FF0;
+	opacity:0.7;
+}
+
+#spinBtn{
+	display:none;
+}
+
+#lightBox1{
+	position:absolute;
+	left:20%;
+	width:300px;
+    height:500px;
+	display:none;
+	z-index:3;
+}
+
+#lightBox2{
+	position:absolute;
+	left:60%;
+	width:300px;
+    height:500px;
+	display:none;
+	z-index:3;
+}
+
+.light{
+	opacity:0.7;
+}

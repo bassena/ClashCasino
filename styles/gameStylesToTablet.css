@@ -1,0 +1,291 @@
+body{
+	background-image: url(../images/bg.png);
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#FFF;
+}
+
+a{
+	color: #09F;
+}
+
+#header{
+	height: 3em;
+	background-color:rgba(0,0,0,0.5);
+	float:right;
+	border-bottom-right-radius: 15px;
+	line-height:3em;
+}
+
+#header span{
+	display:block;
+	font-size: 19px;
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+}
+
+#container{
+	position:relative;
+}
+footer{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:3em;
+	background-color:rgba(0,0,0,0.5);
+	
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+#personalInfo{
+	width:auto;
+	height:2em;
+	overflow:hidden;
+	margin-left:1em;
+	margin-top:0.5em;
+	line-height:2em;
+	border-right:thin solid #666;
+	padding-right:0.5em;
+	display:inline-block;
+}
+
+#cashAmount{
+	display:inline-block;
+	margin-left:0.5em;
+	margin-top:0.8em;
+	vertical-align:top;
+}
+
+#casinoLogoDiv{
+	background-color: rgba(0,0,0,0.5);
+	height:140px;
+	width:250px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+#logo{
+	position:absolute;
+	float:left;
+	padding-top:0.5em;
+	padding-left:0.6em;
+	display:inline;
+}
+
+#bettingTable{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#bettingTable td{
+	padding-right:1em;
+	text-align:center;
+}
+
+#betInfoDiv{
+	margin-top: 1em;
+	margin-left:auto;
+	margin-right:auto;
+	width:10ex;
+}
+
+#wheelDiv{
+	float:left;
+	width:25%;	
+}
+
+.numChip{
+	margin-left:0.5em;
+	margin-top: 0.5em;
+	display:none;
+}
+
+.cornerChip{
+	margin-top: -0.3em;
+	margin-left: -0.5em;
+	display:none;
+}
+
+.avenueChip{
+	margin-left:-0.5em;
+	margin-top:-0.3em;
+	display:none;
+}
+
+.streetChip{
+	margin-left:-0.5em;
+	margin-top:-0.3em;
+	display:none;
+}
+
+.thirdChip{
+	margin-top:-0.3em;
+	margin-left:4em;
+	display:none;
+}
+
+.botChip{
+	margin-top:-0.3em;
+	margin-left:1.3em;
+	display:none;
+}
+
+#wheelInfo{
+	font-size: 0.9em;
+	margin-left:1.5em;
+}
+
+#gameArea{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#wheel{
+	width:100%;
+	height:100%;
+	
+}
+
+#betBtn{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.betFields{
+	width:10.3ex;
+	margin-bottom:0.5em;
+}
+
+#bettingTableMobile{
+	display:none;
+}
+
+#rouletteTable{
+	width:554px;
+	height:272px;
+	float:right;
+	margin-top: 1em;
+}
+
+#rouletteTable img{
+	width:554px;
+	height:272px;
+	z-index: -1;
+}
+
+#topNumbers{
+	padding-top:0.375em;
+	height:3.75em;
+}
+
+.stubDiv{
+	width:4.5em;
+	height:1em;
+	float:left;
+}
+
+.topNumbers{
+	width:2.1em;
+	height:3.4em;
+	margin-right:0.23em;
+	float:left;
+}
+
+#topAvenueAndCorners{
+	height:0.975em;
+}
+
+#topAvenueBet{
+	width:0.98em;
+	margin-right:1.23em;
+	float:left;
+}
+
+.streetStubDiv{
+	width:3.94em;
+	float:left;
+}
+
+.corners{
+	width:0.975em;
+	margin-right:1.35em;
+	float:left;
+}
+
+#zeroBet{
+	margin-left:0.675em;
+	margin-right:0.45em;
+	width:3.375em;
+	height:3em;
+	float:left;
+}
+
+.midBotNumbers{
+	width:2.1em;
+	height:3em;
+	margin-right:0.217em;
+	float:left;
+}
+
+#midAvenueBet{
+	width:0.975em;
+	margin-right:1.275em;
+	float:left;
+}
+
+#botAvenueBet{
+	width:0.975em;
+	margin-right:1.275em;
+	float:left;
+}
+
+.thirdDivs{
+	width:9em;
+	height:1em;
+	margin-right:0.323em;
+	float:left;
+}
+
+.botBetAreas{
+	margin-top:0.5em;
+	margin-right:0.3em;
+	width:4.35em;
+	float:left;
+}
+
+.botBetAreas:hover{
+	background-color:#FF0;
+	opacity:0.7;
+}
+
+#cashAmount{
+	padding-top:0.3em;
+	font-size:0.9em;
+}
+
+#lightBox1{
+	position:absolute;
+	top:-20%;
+	left:10%;
+	width:300px;
+    height:500px;
+	
+}
+
+#lightBox2{
+	position:absolute;
+	top:-20%;
+	left:50%;
+	width:300px;
+    height:500px;
+	
+}
+
+.light{
+	opacity:0.7;
+	width:64.5px;
+	height:64.5px;
+}

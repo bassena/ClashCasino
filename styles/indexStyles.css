@@ -1,0 +1,191 @@
+body{
+	background-image: url(../images/bg.png);
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+/* Left Player Styles*/
+#leftPlayer{
+	position:absolute;
+	top: 68%;
+	left: 7%;
+	
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+}
+
+#leftCard2{
+	position:absolute;
+	top:0%;
+	left: 20%;
+}
+
+#leftPlayerChips{
+	position:absolute;
+	left:8%;
+	top: 53%;
+}
+
+#leftRedChip{
+	position:absolute;
+	top:0%;
+	left:10%;
+}
+
+#leftMovingChip{
+	position:absolute;
+	top:53%;
+	left:9%;
+	z-index:3;
+}
+
+
+/*Centre Player Styles*/
+#centrePlayer{
+	position:absolute;
+	top: 80%;
+	left: 44%;
+}
+
+#centreCard2{
+	position:absolute;
+	top:0%;
+	left: 20%;
+}
+
+#centrePlayerChips{
+	position:absolute;
+	left:45%;
+	top: 64%;
+}
+
+#centreRedChip{
+	position:absolute;
+	left:10%;
+}
+
+#centreMovingChip{
+	position:absolute;
+	top:64%;
+	left:46%;
+	z-index:2;
+}
+
+
+/*Right Player Styles*/
+#rightPlayer{
+	position:absolute;
+	top: 70%;
+	left: 83%;
+	
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+}
+
+#rightCard2{
+	position:absolute;
+	top:0%;
+	left: 20%;
+}
+
+#rightPlayerChips{
+	position:absolute;
+	left:80%;
+	top: 53%;
+}
+
+#rightRedChip{
+	position:absolute;
+	left:10%;
+}
+
+#rightMovingChip{
+	position:absolute;
+	top:53%;
+	left:81%;
+	z-index:1;
+}
+
+
+/*Main Card Row Styles*/
+#cardRow{
+	width:470px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:13em;
+}
+
+
+
+#card2{
+	left:6em;
+}
+
+#card3{
+	left:12em;
+}
+
+#card4{
+	left:18em;
+}
+
+#card5{
+	left:24em;
+	
+}
+
+#skip{
+	font-size:1.2em;
+	color:#CCC;
+	text-decoration:none;
+	position:absolute;
+	top:93%;
+	right:5%;
+	transition:all 0.5s;
+}
+
+
+/*Skip Link Styles*/
+#skip:hover{
+	transition:all 0.5s;
+	color:white;
+}
+
+#winDiv{
+	width:460px;
+	marin-top:1em;
+	margin-left:auto;
+	margin-right:auto;
+	visibility:hidden;
+}
+#winnerImg{
+	position:absolute;
+	z-index:5;
+}
+
+canvas{
+	position:absolute;
+	top:40%;
+	z-index:-1;
+}
+
+#logoDiv{
+	width:460px;
+	position:absolute;
+	top:-125px;
+	left:50%;
+	margin-left:-230px;
+}
+
+#horizon{
+	position:absolute;
+	top:40%;
+	left:0%;
+	width:100%;
+	height:1px;
+}
+
+.mobile{
+	display:none;
+}
